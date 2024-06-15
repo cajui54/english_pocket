@@ -1,0 +1,39 @@
+.containerTable {
+  min-height: 100vh;
+}
+.table {
+  width: 95%;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  caption {
+    background-color: var(--color-dark-secundary);
+    padding: 1rem 0;
+    font-size: 2rem;
+    font-family: var(--font-roboto);
+    font-weight: 900;
+    color: var(--color-yellow);
+    letter-spacing: 1px;
+  }
+  thead {
+    background-color: var(--color-dark-secundary);
+  }
+  thead th {
+    font-family: var(--font-roboto);
+    color: var(--color-yellow);
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 300;
+  }
+  tbody td {
+    font-family: var(--font-poppins);
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+  }
+  tbody tr:nth-child(even) {
+    background-color: var(--color-dark-secundary);
+    color: var(--color-yellow);
+  }
+}

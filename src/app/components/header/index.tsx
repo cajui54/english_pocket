@@ -11,7 +11,7 @@ const Header = () => {
         <LiaFlagUsaSolid />
         <h1>
           <span>English</span>
-          <span>Pocket</span>
+          <span>of Pocket</span>
         </h1>
       </div>
       <Navbar />
