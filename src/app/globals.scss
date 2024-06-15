@@ -1,0 +1,33 @@
+:root {
+  font-size: 62.5%;
+  --color-yellow: #fcd34d;
+  --color-dark-primary: rgb(0, 0, 0);
+  --color-dark-secundary: #020617;
+  --color-white: #d1d5db;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--color-dark-primary);
+  color: var(--color-white);
+}
+
+//Menu burger animation
+.openMenu div {
+  transform: translateX(-50px);
+  background-color: transparent;
+  box-shadow: none;
+}
+.openMenu div::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.openMenu div::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.showOrHiddenMenu {
+  transform: scale(1) !important;
+}
