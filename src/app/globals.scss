@@ -31,3 +31,13 @@ body {
 .showOrHiddenMenu {
   transform: scale(1) !important;
 }
+.buttonForm {
+  position: absolute;
+  padding: 0.4rem;
+  top: 2rem;
+  right: 7.4rem;
+  font-size: 2rem;
+  background-color: var(--color-yellow);
+  border: none;
+  border-radius: 0.5rem;
+}

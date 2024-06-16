@@ -1,0 +1,79 @@
+.mainForm {
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+
+  fieldset {
+    width: 35rem;
+    overflow-y: hidden;
+    position: relative;
+    margin: 1rem auto;
+
+    border-radius: 0.5rem;
+    border: none;
+  }
+  legend {
+    font-size: 1.5rem;
+    color: var(--color-yellow);
+    font-family: var(--font-roboto);
+    font-weight: bold;
+  }
+
+  @media screen and (min-width: 700px) {
+    width: 50rem;
+    margin: 2rem auto;
+  }
+  @media screen and (min-width: 900px) {
+    width: 90rem;
+    margin: 0 auto;
+    fieldset {
+      margin-left: 1rem;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.containerInput {
+  position: relative;
+  width: 35rem;
+  svg {
+    position: absolute;
+    top: 2.1rem;
+    left: 0.4rem;
+    font-size: 3rem;
+  }
+  input {
+    background-color: var(--color-dark-secundary);
+    border: 0.1rem solid var(--color-white);
+    border-radius: 0.5rem;
+    width: 29rem;
+    padding: 1.5rem 4rem;
+    margin: 1rem 0;
+    color: #fff;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    outline: none;
+    font-size: 2rem;
+  }
+  input::placeholder {
+    font-style: italic;
+    font-size: 1.5rem;
+  }
+  input:focus {
+    border: 0.1rem solid var(--color-yellow);
+  }
+  span {
+    position: relative;
+    top: -2rem;
+    left: 1rem;
+    font-size: 1.5rem;
+  }
+  p {
+    margin-left: 1rem;
+    font-size: 1.3rem;
+    font-family: var(--font-poppins);
+    color: #b91c1c;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+  }
+}

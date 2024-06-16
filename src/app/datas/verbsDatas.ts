@@ -1,8 +1,5 @@
-interface IVerbs {
-  infinitive: string;
-  pastSimple: string;
-  pastParticipe: string;
-}
+import { IVerbs } from "../interface/Verbs";
+
 export const verbsList: IVerbs[] = [
   { infinitive: "be", pastSimple: "was/were", pastParticipe: "been" },
   { infinitive: "become", pastSimple: "became", pastParticipe: "become" },

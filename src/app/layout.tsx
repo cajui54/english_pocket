@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto, Poppins, Spicy_Rice } from "next/font/google";
 import "./globals.scss";
 import { MenuContextProvider } from "./context/contextMenu";
+import { VerbsContextProvider } from "./context/contextVerbs";
 
 export const metadata: Metadata = {
   title: "English Pocket | list verbs irregular",
@@ -41,7 +42,9 @@ export default function RootLayout({
       <body
         className={`${roboto.variable} ${poppins.variable} ${spicy_rice.variable}`}
       >
-        <MenuContextProvider>{children}</MenuContextProvider>
+        <MenuContextProvider>
+          <VerbsContextProvider>{children}</VerbsContextProvider>
+        </MenuContextProvider>
       </body>
     </html>
   );

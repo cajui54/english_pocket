@@ -1,23 +1,8 @@
 "use client";
-import {
-  createContext,
-  Dispatch,
-  ReactNode,
-  SetStateAction,
-  useContext,
-  useState,
-} from "react";
-import { IMenu } from "../../app/interface/MenuBuger";
+import { createContext, useContext, useState } from "react";
+import { IContextMenu, IMenu } from "../../app/interface/MenuBuger";
 import { menuConfig } from "../config/menuConfig";
-
-interface PropsProvider {
-  children: ReactNode;
-}
-
-interface IContextMenu {
-  menu: IMenu;
-  setMenu?: Dispatch<SetStateAction<IMenu>>;
-}
+import { PropsProvider } from "../interface/ReactProps";
 
 export const MenuContext = createContext<IContextMenu>({
   menu: menuConfig.close,

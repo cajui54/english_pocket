@@ -1,9 +1,12 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import { verbsList } from "@/app/datas/verbsDatas";
+import FormSearch from "../form";
+
 const TableInfo = () => {
   return (
     <div className={styles.containerTable}>
+      <FormSearch />
       <table className={styles.table}>
         <caption>List of Verb Irregulars</caption>
         <thead>

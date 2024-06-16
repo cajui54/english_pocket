@@ -3,7 +3,7 @@
 }
 .table {
   width: 95%;
-  margin: 2rem auto;
+  margin: 5rem auto;
   border-collapse: collapse;
   caption {
     background-color: var(--color-dark-secundary);
@@ -23,7 +23,7 @@
     padding: 1rem 0;
     font-size: 1.5rem;
     letter-spacing: 0.1rem;
-    font-weight: 300;
+    font-weight: 900;
   }
   tbody td {
     font-family: var(--font-poppins);
@@ -35,5 +35,8 @@
   tbody tr:nth-child(even) {
     background-color: var(--color-dark-secundary);
     color: var(--color-yellow);
+  }
+  @media screen and (min-width: 900px) {
+    width: 90rem;
   }
 }
