@@ -1,0 +1,15 @@
+.mainParalax {
+  height: 20rem;
+  background-attachment: fixed;
+  background-position: -40rem -75rem;
+  margin: 5rem 0;
+  div {
+    height: 100%;
+    background-image: linear-gradient(
+      to top,
+      rgb(0, 0, 0),
+      transparent,
+      #000000
+    );
+  }
+}
