@@ -17,9 +17,9 @@ const FormSearch = () => {
   const findIrregularVerb = (input: string) => {
     const irregularVerb = verbsList.find((verb) => {
       if (
-        verb.infinitive === input ||
-        verb.pastSimple === input ||
-        verb.pastParticiple === input
+        verb.infinitive === input.toLocaleLowerCase() ||
+        verb.pastSimple === input.toLocaleLowerCase() ||
+        verb.pastParticiple === input.toLocaleLowerCase()
       ) {
         return verb;
       }
