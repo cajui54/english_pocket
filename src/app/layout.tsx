@@ -42,10 +42,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script
+        <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-HB7D4H70R6"
-        ></script>
+        />
+
         <Script>
           {`
             window.dataLayer = window.dataLayer || [];
