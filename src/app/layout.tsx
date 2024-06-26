@@ -42,12 +42,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <Script
+        <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-0S9Q9D0CPX"
         />
 
-        <Script>
+        <script>
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -55,7 +55,7 @@ export default function RootLayout({
 
             gtag('config', 'G-0S9Q9D0CPX');
           `}
-        </Script>
+        </script>
       </head>
       <body
         className={`${roboto.variable} ${poppins.variable} ${spicy_rice.variable}`}

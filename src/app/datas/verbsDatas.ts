@@ -142,6 +142,5 @@ export const verbsList: IVerbs[] = [
   { infinitive: "ring", pastSimple: "rang", pastParticiple: "rung" },
   { infinitive: "put", pastSimple: "put", pastParticiple: "put" },
   { infinitive: "pay", pastSimple: "paid", pastParticiple: "paid" },
-  { infinitive: "make", pastSimple: "paid", pastParticiple: "paid" },
 ];
 console.log(verbsList.length);
