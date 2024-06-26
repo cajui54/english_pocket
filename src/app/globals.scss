@@ -44,3 +44,14 @@ body {
 .paralaxImageBridge {
   background-image: url("../app/assets/images/brooklyn-bridge.jpg");
 }
+.paralaxImageTimeSquare {
+  background-image: url("../app/assets/images/timesquare.jpg");
+}
+.active div {
+  position: absolute !important;
+  left: 45% !important;
+  width: 4rem !important;
+  height: 0.5rem !important;
+  background-color: var(--color-yellow) !important;
+  border-radius: 0.5rem !important;
+}

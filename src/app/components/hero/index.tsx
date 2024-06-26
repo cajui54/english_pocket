@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 import { LiaFlagUsaSolid } from "react-icons/lia";
 const Hero = () => {
   return (
-    <div className={styles.mainHero}>
+    <div className={styles.mainHero} id="anchorHome">
       <div className={styles.bannerImage}></div>
       <div className={styles.containerTitles}>
         <LiaFlagUsaSolid />

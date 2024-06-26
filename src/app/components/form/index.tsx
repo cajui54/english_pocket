@@ -19,7 +19,7 @@ const FormSearch = () => {
       if (
         verb.infinitive === input ||
         verb.pastSimple === input ||
-        verb.pastParticipe === input
+        verb.pastParticiple === input
       ) {
         return verb;
       }

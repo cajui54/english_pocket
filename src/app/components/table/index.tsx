@@ -5,7 +5,7 @@ import FormSearch from "../form";
 
 const TableInfo = () => {
   return (
-    <div className={styles.containerTable}>
+    <div className={styles.containerTable} id="anchorTable">
       <FormSearch />
       <table className={styles.table}>
         <caption>List of Verb Irregulars</caption>
@@ -21,8 +21,26 @@ const TableInfo = () => {
           {verbsList.map((verb, index) => (
             <tr key={index}>
               <td>{verb.infinitive}</td>
-              <td>{verb.pastSimple}</td>
-              <td>{verb.pastParticipe}</td>
+              <td>
+                {verb.pastSimple.split("/").length === 2 ? (
+                  <>
+                    <p>{verb.pastSimple.split("/")[0]}</p>
+                    <p>{verb.pastSimple.split("/")[1]}</p>
+                  </>
+                ) : (
+                  <p>{verb.pastSimple.split("/")[0]}</p>
+                )}
+              </td>
+              <td>
+                {verb.pastParticiple.split("/").length === 2 ? (
+                  <>
+                    <p>{verb.pastParticiple.split("/")[0]}</p>
+                    <p>{verb.pastParticiple.split("/")[1]}</p>
+                  </>
+                ) : (
+                  <p>{verb.pastParticiple.split("/")[0]}</p>
+                )}
+              </td>
             </tr>
           ))}
         </tbody>

@@ -18,7 +18,7 @@ const OutputForm = () => {
         <>
           <span>{irregularVerbs.infinitive}</span>
           <span>{irregularVerbs.pastSimple}</span>
-          <span>{irregularVerbs.pastParticipe}</span>
+          <span>{irregularVerbs.pastParticiple}</span>
         </>
       )}
     </div>
