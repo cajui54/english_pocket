@@ -3,7 +3,6 @@ import { Roboto, Poppins, Spicy_Rice } from "next/font/google";
 import "./globals.scss";
 import { MenuContextProvider } from "./context/contextMenu";
 import { VerbsContextProvider } from "./context/contextVerbs";
-import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "English Pocket | list verbs irregular",
