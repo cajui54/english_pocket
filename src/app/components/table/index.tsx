@@ -7,6 +7,9 @@ const TableInfo = () => {
   return (
     <div className={styles.containerTable} id="anchorTable">
       <FormSearch />
+      <div className={styles.imgContainer}>
+        <div></div>
+      </div>
       <table className={styles.table}>
         <caption>List of Verb Irregulars</caption>
         <thead>

@@ -3,7 +3,7 @@ import { Roboto, Poppins, Spicy_Rice } from "next/font/google";
 import "./globals.scss";
 import { MenuContextProvider } from "./context/contextMenu";
 import { VerbsContextProvider } from "./context/contextVerbs";
-
+import Script from "next/script";
 export const metadata: Metadata = {
   title: "English Pocket | list verbs irregular",
   description:
@@ -41,12 +41,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script
+        <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-0S9Q9D0CPX"
         />
 
-        <script>
+        <Script>
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -54,7 +54,7 @@ export default function RootLayout({
 
             gtag('config', 'G-0S9Q9D0CPX');
           `}
-        </script>
+        </Script>
       </head>
       <body
         className={`${roboto.variable} ${poppins.variable} ${spicy_rice.variable}`}
