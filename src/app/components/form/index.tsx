@@ -15,15 +15,13 @@ const FormSearch = () => {
   const refInput = useRef<HTMLInputElement>(null);
 
   const findIrregularVerb = (input: string) => {
-    const irregularVerb = verbsList.find((verb) => {
-      if (
-        verb.infinitive === input.toLocaleLowerCase() ||
-        verb.pastSimple === input.toLocaleLowerCase() ||
-        verb.pastParticiple === input.toLocaleLowerCase()
-      ) {
-        return verb;
-      }
-    });
+    const regexInput = new RegExp(input, "i");
+    const irregularVerb = verbsList.find(
+      (verb) =>
+        regexInput.test(verb.infinitive) ||
+        regexInput.test(verb.pastSimple) ||
+        regexInput.test(verb.pastParticiple)
+    );
     if (irregularVerb) {
       setVerbs!(irregularVerb);
     } else {

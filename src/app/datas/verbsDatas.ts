@@ -67,7 +67,7 @@ export const verbsList: IVerbs[] = [
   { infinitive: "go", pastSimple: "went", pastParticiple: "gone" },
   { infinitive: "grow", pastSimple: "grew", pastParticiple: "grown" },
   { infinitive: "hang", pastSimple: "hung", pastParticiple: "hung" },
-  { infinitive: "have", pastSimple: "had", pastParticiple: "had" },
+  { infinitive: "have/has", pastSimple: "had", pastParticiple: "had" },
   { infinitive: "hear", pastSimple: "heard", pastParticiple: "heard" },
   { infinitive: "hide", pastSimple: "hid", pastParticiple: "hidden" },
   { infinitive: "hit", pastSimple: "hit", pastParticiple: "hit" },
